@@ -25,7 +25,9 @@ Draw custom images on your Revolut card using your phone's drawing screen. RevoD
 - ADB (Android Debug Bridge) installed
 - USB cable
 
-### For Xiaomi devices
+**Optional:** [scrcpy](https://github.com/Genymobile/scrcpy) if you want to mirror your phone screen on your computer while drawing (not required - you can just watch your phone directly).
+
+### For Xiaomi/Redmi devices
 You must enable **"USB debugging (Security settings)"** in Developer Options, then reboot. This allows ADB to simulate touch input.
 
 ## Installation
