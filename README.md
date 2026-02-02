@@ -4,6 +4,10 @@ Draw custom images on your Revolut card using your phone's drawing screen. RevoD
 
 ![RevoDraw Demo](https://img.shields.io/badge/Platform-Android-green) ![Python](https://img.shields.io/badge/Python-3.8+-blue) ![License](https://img.shields.io/badge/License-MIT-yellow)
 
+## Demo
+
+![RevoDraw Demo](demo.gif)
+
 ## Features
 
 - **Automatic boundary detection** - Detects the dotted-line drawing area from your phone screen
