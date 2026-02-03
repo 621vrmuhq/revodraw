@@ -385,6 +385,16 @@ HTML_TEMPLATE = '''
                 <button class="btn btn-danger" id="stopBtn" onclick="stopDrawing()" disabled>
                     ⏹ Stop
                 </button>
+                <div class="control-group" style="margin-left:20px;">
+                    <label>Stroke:</label>
+                    <input type="range" id="strokeDuration" min="20" max="150" value="60">
+                    <span id="strokeVal">60ms</span>
+                </div>
+                <div class="control-group">
+                    <label>Delay:</label>
+                    <input type="range" id="strokeDelay" min="5" max="50" value="15">
+                    <span id="delayVal">15ms</span>
+                </div>
             </div>
             <div class="progress-bar">
                 <div class="progress-bar-fill" id="progressBar"></div>
@@ -501,6 +511,12 @@ HTML_TEMPLATE = '''
         document.getElementById('eraserSize').oninput = (e) => {
             eraserSize = parseInt(e.target.value);
             document.getElementById('eraserSizeVal').textContent = eraserSize;
+        };
+        document.getElementById('strokeDuration').oninput = (e) => {
+            document.getElementById('strokeVal').textContent = e.target.value + 'ms';
+        };
+        document.getElementById('strokeDelay').oninput = (e) => {
+            document.getElementById('delayVal').textContent = e.target.value + 'ms';
         };
 
         function setTool(tool) {
@@ -1202,12 +1218,17 @@ HTML_TEMPLATE = '''
                         flip_v: l.flipV
                     }));
 
+                const strokeDuration = parseInt(document.getElementById('strokeDuration').value);
+                const strokeDelay = parseInt(document.getElementById('strokeDelay').value);
+
                 const resp = await fetch('/draw', {
                     method: 'POST',
                     headers: {'Content-Type': 'application/json'},
                     body: JSON.stringify({
                         layers: layersToSend,
-                        area: drawingArea
+                        area: drawingArea,
+                        stroke_duration: strokeDuration,
+                        stroke_delay: strokeDelay
                     })
                 });
 
@@ -1399,6 +1420,8 @@ def draw():
     data = request.json
     input_layers = data.get('layers', [])
     area = data['area']
+    stroke_duration = data.get('stroke_duration', 60)
+    stroke_delay = data.get('stroke_delay', 15) / 1000.0  # Convert ms to seconds
 
     def generate():
         try:
@@ -1498,10 +1521,10 @@ def draw():
                     x2, y2 = path[j + 1]
                     subprocess.run(
                         ['adb', 'shell', 'input', 'swipe',
-                         str(x1), str(y1), str(x2), str(y2), '60'],
+                         str(x1), str(y1), str(x2), str(y2), str(stroke_duration)],
                         capture_output=True
                     )
-                    time.sleep(0.015)
+                    time.sleep(stroke_delay)
 
                 progress = int((i + 1) / total_paths * 100)
                 yield f"data:{json.dumps({'progress': progress})}\n\n"
