@@ -341,12 +341,12 @@ HTML_TEMPLATE = '''
                 <div class="controls" style="margin-bottom:10px;">
                     <div class="control-group">
                         <label>Scale X:</label>
-                        <input type="range" id="scaleX" min="0.1" max="2" step="0.05" value="1">
+                        <input type="range" id="scaleX" min="0.1" max="5" step="0.05" value="1">
                         <span id="scaleXVal">100%</span>
                     </div>
                     <div class="control-group">
                         <label>Scale Y:</label>
-                        <input type="range" id="scaleY" min="0.1" max="2" step="0.05" value="1">
+                        <input type="range" id="scaleY" min="0.1" max="5" step="0.05" value="1">
                         <span id="scaleYVal">100%</span>
                     </div>
                     <div class="control-group">
